@@ -1,0 +1,10 @@
+$breackpoints: (
+	'seven__hundred': 714px,
+);
+
+@mixin seven__hundred {
+	@media screen and (max-width: map-get($breackpoints, 'seven__hundred')) {
+		@content;
+	}
+}
+

@@ -1,0 +1,39 @@
+@use '../../../styles/abstracts/mixins' as *;
+@import url('https://fonts.googleapis.com/css2?family=Kings&family=Poppins:wght@900&family=Roboto:wght@100&family=Rubik:wght@300&display=swap');
+
+
+.navbar {
+    display: flex;
+
+    height: 48px;    
+    border-bottom: 2px solid grey;
+
+
+
+    &--content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        gap: 10px;
+
+        width: 717px;
+        margin: 0 auto;
+
+        @include seven__hundred {
+            padding-left: 9px;
+        }
+
+        img {
+            width: 20.67px;
+            height: 18px;
+        }
+    
+        span {
+            font-size: 20px;
+            font-family: Poppins;
+            color: #2E0039;
+        }
+    }
+
+}
